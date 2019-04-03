@@ -1,0 +1,17 @@
+{
+  "name": "bus-test",
+  "version": "1.0.0",
+  "description": "Practice assessment for Turing FE Mod-1",
+  "main": "bus-test.js",
+  "dependencies": {
+    "chai": "^4.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Khalid Williams",
+  "license": "ISC"
+}
