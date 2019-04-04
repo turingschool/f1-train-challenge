@@ -2,7 +2,7 @@ var assert = require('chai').assert;
 var Train = require('./train')
 
 describe('Train', function() {
-  it.skip('should be a function and create a train', function(){
+  it.skip('should be a function', function(){
     assert.isFunction(Train);
   });
 
@@ -12,10 +12,14 @@ describe('Train', function() {
     assert.isObject(train);
   });
 
-  it.skip('should not have passengers by default', function() {
-    var train = new Train('Orient Express');
+  it.skip('should have a name and no passengers by default', function() {
+    var train1 = new Train('Orient Express');
+    var train2 = new Train('Trans-Siberian Express');
 
-    assert.deepEqual(train.passengers, []);
+    assert.equal(train1.name, 'Orient Express');
+    assert.equal(train2.name, 'Trans-Siberian Express');
+    assert.deepEqual(train1.passengers, []);
+    assert.deepEqual(train2.passengers, []);
   });
 
   it.skip('should be able to have passengers at the beginning of the ride', function() {
